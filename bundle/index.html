@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PPT 工坊</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg class="brand-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M7 12l3-3 2.5 2.5L16 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-name">PPT 工坊</span>
+      <span id="env-badge" class="env-badge" hidden>本地预览模式</span>
+    </div>
+    <ol class="steps" id="steps" aria-label="制作流程"></ol>
+    <div class="top-actions">
+      <span id="usage" class="usage" title="本次会话的 AI 调用统计">尚未调用 AI</span>
+      <button id="btn-reset" class="btn btn-ghost" type="button">新建</button>
+    </div>
+  </header>
+
+  <div id="toast" class="toast" role="alert" hidden></div>
+  <main id="view" class="view"></main>
+
+  <div id="loading" class="loading-overlay" hidden>
+    <div class="loading-box">
+      <div class="spinner" aria-hidden="true"></div>
+      <p id="loading-text">正在调用 AI…</p>
+      <p class="loading-hint">生成需要一些时间，请勿关闭窗口</p>
+    </div>
+  </div>
+
+  <script src="./vendor/pptxgen.bundle.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

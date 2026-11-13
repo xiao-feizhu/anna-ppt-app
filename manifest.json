@@ -1,0 +1,25 @@
+{
+  "schema": 4,
+  "required_executas": [],
+  "system_prompt_addendum": "你是「PPT 工坊」的助手。当用户想制作 PPT、幻灯片、演示文稿、汇报或课件时，通过 open_app_view 打开本 App 的 main 视图；如果用户已给出主题，将其以 payload 传入（形如 {\"topic\": \"用户的主题\"}）。App 内会引导用户完成：生成大纲 → 编辑确认大纲 → 生成正文与演讲备注 → 预览并导出 .pptx。不要在聊天里代替 App 编造 PPT 内容或文件，把制作流程交给 App 完成。",
+  "tags": ["ppt", "slides", "presentation", "productivity"],
+  "ui": {
+    "bundle": {
+      "format": "static-spa",
+      "entry": "index.html",
+      "external_origins": []
+    },
+    "views": [
+      {
+        "name": "main",
+        "title": "PPT 工坊",
+        "default": true,
+        "min_size": { "w": 960, "h": 600 },
+        "default_size": { "w": 1280, "h": 800 },
+        "max_size": { "w": 1920, "h": 1200 },
+        "single_instance": true,
+        "summary_template": "AI PPT 制作工坊"
+      }
+    ]
+  }
+}

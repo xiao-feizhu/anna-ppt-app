@@ -1,0 +1,7 @@
+{
+  "name": "PPT 工坊",
+  "slug": "ppt-studio",
+  "tagline": "大纲先行、逐页可改的 AI PPT 生成器，一键导出 .pptx",
+  "category": "productivity",
+  "description": "输入主题，AI 先生成可编辑的大纲；确认后一次性生成全部页面的要点与演讲备注，支持逐页修改、单页重新生成，最后导出真正的 .pptx 文件，在 PowerPoint / WPS 中继续完善。三种版式配色，草稿自动保存。"
+}
